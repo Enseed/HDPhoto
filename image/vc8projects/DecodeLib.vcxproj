@@ -38,6 +38,7 @@
     <ProjectGuid>{F3DED308-7A6F-4B9F-8EDF-AF99DEC8BDE3}</ProjectGuid>
     <RootNamespace>DecodeLib</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Streaming Release|Win32'" Label="Configuration">
@@ -127,14 +128,8 @@
     <OutDir>$(Configuration)\$(ProjectName)\$(Platform)\</OutDir>
     <IntDir>$(OutDir)</IntDir>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(Configuration)/$(ProjectName)\</OutDir>
-    <IntDir>$(OutDir)</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(Configuration)\$(ProjectName)\$(Platform)\</OutDir>
-    <IntDir>$(OutDir)</IntDir>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Streaming Debug|Win32'">
     <OutDir>$(Configuration)/$(ProjectName)\</OutDir>
     <IntDir>$(OutDir)</IntDir>
